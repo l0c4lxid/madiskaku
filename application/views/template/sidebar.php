@@ -5,7 +5,7 @@
         <div class="sidebar-brand-icon">
           <i class="fas fa-users"></i>
         </div>
-        <div class="sidebar-brand-text mx-3">Madiska <sup>Ku</sup></div>
+        <div class="sidebar-brand-text mx-3"><sup>Si</sup> Madiska</div>
       </a>
 
       <!-- Divider -->

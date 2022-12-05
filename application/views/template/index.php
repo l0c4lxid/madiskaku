@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>MadiskaKu - <?= $judul ?></title>
+  <title>SiMadiska-<?= $judul ?></title>
 
   <!-- Custom fonts for this template-->
   <link href="<?= base_url('assets/') ?>vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -57,7 +57,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; MadiskaKu 2022</span>
+            <span>Copyright &copy; SiMadiska 2022</span>
           </div>
         </div>
       </footer>

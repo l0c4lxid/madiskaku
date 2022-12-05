@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Hidayah Bootstrap Template - Index</title>
+  <title>SiMadiska</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -45,7 +45,7 @@
       <div class="row justify-content-center">
         <div class="col-xl-10 d-flex align-items-center justify-content-end">
 
-          <h1 class="logo mr-auto"><a href="<?= base_url() ?>">Remaja Id</a></h1>
+          <h1 class="logo mr-auto"><a href="<?= base_url() ?>">SiMadiska</a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -350,7 +350,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong>MadiskaKu</a></strong>. All Rights Reserved
+        &copy; Copyright <strong>SiMadiska</a></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->

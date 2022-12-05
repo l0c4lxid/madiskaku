@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>MadiskaKu - Welcome</title>
+        <title>SiMadiska - Welcome</title>
         <link rel="icon" type="image/x-icon" href="<?= base_url() ?>assets/img/favicon.ico" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
@@ -19,7 +19,7 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">Madiska Ku</a>
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">SiMadiska</a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -38,7 +38,7 @@
         <header class="masthead">
             <div class="container d-flex h-100 align-items-center">
                 <div class="mx-auto text-center">
-                    <h1 class="mx-auto my-0 text-uppercase">Madiska Ku</h1>
+                    <h1 class="mx-auto my-0 text-uppercase">Madiska</h1>
                     <h2 class="text-white-50 mx-auto mt-2 mb-5">Remaja Muda Mudi Karet, Yang Muda Yang Berkarya</h2>
                     <a class="btn btn-primary js-scroll-trigger" href="#about">Mulai Sekarang</a>
                 </div>
@@ -106,10 +106,12 @@
                     </div>
                 </div>
                 <div class="container d-flex h-100 align-items-center" style="padding-top: 10rem">
+                    <div class="mx-auto text-center">
+                        <a class="btn btn-primary js-scroll-trigger" href="<?= base_url() ?>welcome/view_all/">Lihat lebih banyak lagi</a>
+                    </div>
                 </div>
             </div>
         </section>
-		
         <section class="contact-section bg-black" id="contact">
             <div class="container">
                 <div class="row">
@@ -117,7 +119,7 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Alamat</h4>
+                                <h4 class="text-uppercase m-0">Address</h4>
                                 <hr class="my-4" />
                                 <div class="small text-black-50"><span style="cursor: pointer" onclick="open_map()">Karet, Pleret, Pleret, Bantul</span></div>
                             </div>
@@ -137,7 +139,7 @@
                         <div class="card py-4 h-100">
                             <div class="card-body text-center">
                                 <i class="fas fa-mobile-alt text-primary mb-2"></i>
-                                <h4 class="text-uppercase m-0">Telepon</h4>
+                                <h4 class="text-uppercase m-0">Phone</h4>
                                 <hr class="my-4" />
                                 <div class="small text-black-50"><span style="cursor: pointer" onclick="send_wa()">+62 896-0776-5169</span></div>
                             </div>

@@ -10,7 +10,7 @@
           <!-- DataTales Example -->
           <div class="card shadow mb-4">
             <div class="card-header py-3 d-flex">
-              <h6 class="m-0 font-weight-bold text-primary">Tabel Tipe Pengguna</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Tabel User Type</h6>
               <a href="#" class="btn btn-primary btn-icon-split btn-sm ml-3" data-toggle="modal" data-target="#formModal">
                 <span class="icon text-white-50"><i class="fas fa-plus"></i></span>
                 <span class="text">Tambah data</span>
@@ -67,8 +67,8 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-        <button type="button" class="btn btn-primary" onclick="save()">Simpan</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="save()">Save changes</button>
       </div>
     </div>
   </div>
