@@ -122,9 +122,9 @@ CREATE TABLE `lupa_password` (
   `id` int(11) NOT NULL,
   `id_user` int(11) DEFAULT NULL,
   `tanggal` date DEFAULT NULL,
-  `no_wa` varchar(100) NOT NULL,
+  `no_wa` varchar(15) NOT NULL,
   `status_kirim` tinyint(1) NOT NULL DEFAULT 0,
-  `password_baru` varchar(100) NOT NULL
+  `password_baru` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -142,7 +142,7 @@ INSERT INTO `lupa_password` (`id`, `id_user`, `tanggal`, `no_wa`, `status_kirim`
 
 CREATE TABLE `m_pemasukan` (
   `id` int(11) NOT NULL,
-  `nama` varchar(100) DEFAULT NULL,
+  `nama` varchar(30) DEFAULT NULL,
   `status_delete` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -163,7 +163,7 @@ INSERT INTO `m_pemasukan` (`id`, `nama`, `status_delete`) VALUES
 
 CREATE TABLE `m_pengeluaran` (
   `id` int(11) NOT NULL,
-  `nama` varchar(100) DEFAULT NULL,
+  `nama` varchar(30) DEFAULT NULL,
   `status_delete` tinyint(1) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
@@ -299,7 +299,7 @@ DELIMITER ;
 
 CREATE TABLE `pengumuman` (
   `id` int(11) NOT NULL,
-  `nama` varchar(100) DEFAULT NULL,
+  `nama` varchar(30) DEFAULT NULL,
   `waktu` time DEFAULT '00:00:00',
   `tempat` varchar(100) DEFAULT NULL,
   `keterangan` text DEFAULT NULL,
@@ -324,7 +324,7 @@ INSERT INTO `pengumuman` (`id`, `nama`, `waktu`, `tempat`, `keterangan`, `tangga
 CREATE TABLE `pinjaman` (
   `id` int(11) NOT NULL,
   `id_unit` int(11) DEFAULT NULL,
-  `nama_peminjam` varchar(100) DEFAULT NULL,
+  `nama_peminjam` varchar(30) DEFAULT NULL,
   `no_hp` varchar(50) DEFAULT NULL,
   `jumlah` int(11) DEFAULT NULL,
   `tanggal` date DEFAULT NULL,
@@ -341,8 +341,8 @@ CREATE TABLE `pinjaman` (
 
 CREATE TABLE `unit` (
   `id` int(11) NOT NULL,
-  `nama` varchar(100) DEFAULT NULL,
-  `merk` varchar(100) DEFAULT NULL,
+  `nama` varchar(30) DEFAULT NULL,
+  `merk` varchar(50) DEFAULT NULL,
   `stok` int(11) DEFAULT 0,
   `dipinjam` int(11) DEFAULT 0,
   `keterangan` text DEFAULT NULL,
@@ -364,11 +364,11 @@ INSERT INTO `unit` (`id`, `nama`, `merk`, `stok`, `dipinjam`, `keterangan`, `sta
 
 CREATE TABLE `user` (
   `id_user` int(11) NOT NULL,
-  `nama` varchar(100) NOT NULL,
-  `username` varchar(100) NOT NULL,
-  `password` varchar(100) NOT NULL,
+  `nama` varchar(30) NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(30) NOT NULL,
   `user_type` int(11) NOT NULL,
-  `nomor_wa` varchar(50) NOT NULL,
+  `nomor_wa` varchar(15) NOT NULL,
   `status_approve` tinyint(1) NOT NULL COMMENT '0:belum disetujui, 1: sudah disetujui',
   `status_delete` tinyint(1) DEFAULT 0,
   `image` text NOT NULL
@@ -395,7 +395,7 @@ INSERT INTO `user` (`id_user`, `nama`, `username`, `password`, `user_type`, `nom
 
 CREATE TABLE `user_type` (
   `id_user_type` int(11) NOT NULL,
-  `nama` varchar(100) NOT NULL,
+  `nama` varchar(30) NOT NULL,
   `status_delete` tinyint(1) DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
